@@ -105,7 +105,7 @@ class ShakeFlashService : Service(), SensorEventListener {
             }
             lastShakeTime = now
 
-            if (shakeCount >= 2) {
+            if (shakeCount >= 3) {
                 toggleFlashlight()
                 shakeCount = 0
                 lastToggleTime = now
